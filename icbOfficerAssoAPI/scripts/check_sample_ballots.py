@@ -1,6 +1,6 @@
 r"""Read a sample-ballot folder with the counting engine and compare with its answer_key.csv.
 
-    .venv\Scripts\python scripts\check_sample_ballots.py ["..\Sample Ballots\19-11-2026"]
+    .venv\Scripts\python scripts\check_sample_ballots.py ["..\Sample Ballots\21-11-2026"]
 
 No database is used: the candidate layout comes from the folder's
 candidates.csv, and the ballot rules (ka/kha/ga) are applied exactly like
@@ -22,7 +22,7 @@ from app.routers.elections import DEFAULT_POSITIONS  # noqa: E402
 from app.services.ocr_service import ocr_service  # noqa: E402
 from app.utils.paper_number import file_paper_no, read_paper_no, same_paper  # noqa: E402
 
-DEFAULT_DIR = API_DIR.parent / "Sample Ballots" / "19-11-2026"
+DEFAULT_DIR = API_DIR.parent / "Sample Ballots" / "21-11-2026"
 
 
 def build_layout(folder: Path) -> tuple[list[dict], dict[int, int]]:
@@ -52,8 +52,8 @@ def read_ballot(path: Path, layout, max_by_post) -> tuple[dict[int, str], object
             by_post[m.position_id].append(m)
     result: dict[int, str] = {}
     for post, marks in by_post.items():
-        usable = [m for m in marks if not m.void_reason]
-        over = len(usable) > max_by_post[post]
+        # every touched box counts towards the limit (clear, unclear or void), as in _store_page
+        over = len(marks) > max_by_post[post]
         for m in marks:
             if m.void_reason:
                 result[m.candidate_id] = "VOID " + m.void_reason.split(":")[0].replace("Rule ", "")

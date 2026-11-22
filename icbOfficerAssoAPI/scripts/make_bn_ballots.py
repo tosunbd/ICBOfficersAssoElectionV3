@@ -1,11 +1,11 @@
-r"""Create the Bengali test ballots from the Word form of 19-11-2026 (QR code, bar code,
-large number box for the numbering machine).
+r"""Create the Bengali test ballots from the Word form of 21-11-2026 (QR code, bar code
+at the bottom centre, large number box for the numbering machine).
 
 Run from the icbOfficerAssoAPI folder (needs Microsoft Word):
 
     .venv\Scripts\python scripts\make_bn_ballots.py [output folder]
 
-Default output: <project>/Sample Ballots/19-11-2026
+Default output: <project>/Sample Ballots/21-11-2026
 Form:       <that folder>/Blank ballot/Blank_ballot_form.docx   (read only)
 Candidates: <that folder>/candidates.csv   (same names and left/right order as the form, read only)
     img_0001.jpg ... IMG_0025.JPEG        25 scanned ballots, every common voter mistake
@@ -47,7 +47,7 @@ from make_ballot_form import BALLOT_CODE  # noqa: E402
 from make_ballot_papers import TEMPLATE, ballot_pdf, render_pages, template_candidates, write_blank  # noqa: E402
 
 ROOT = API_DIR.parent
-OUT = ROOT / "Sample Ballots" / "19-11-2026"
+OUT = ROOT / "Sample Ballots" / "21-11-2026"
 # the candidate list of the final ballot: read only, never written by this script
 CANDIDATES_CSV = OUT / "candidates.csv"
 SEED = 20261103
@@ -237,12 +237,13 @@ RESULT = {
     "across": "VOID - rule (kha): X crosses the box border",
     "beside": "VOID - rule (kha): mark outside the box",
     "scribble": "VOID - rule (ga): box scribbled over",
-    "dot": "not a vote - dot too small to be a mark",
+    "dot": "counted - unclear mark and the other box of the post is empty",
     "x_name": "not a vote - X on the name, box empty",
     "circle_name": "not a vote - name circled, box empty",
 }
 VOID_KINDS = {"across", "beside", "scribble"}
-NO_VOTE_KINDS = {"dot", "x_name", "circle_name"}
+NO_VOTE_KINDS = {"x_name", "circle_name"}       # the box itself is not touched
+COUNTED_KINDS = {"x", "tick", "slash", "pencil", "dot"}
 
 
 # ------------------------------------------------------------ ballot plans
@@ -291,13 +292,13 @@ def plans(positions: list[dict], rng: random.Random) -> list[dict]:
            {**clear(2), P(2)[1]: "across"})
     ballot("Rule (ga): General Secretary box scribbled over -> void",
            {**clear(3), P(3)[0]: "scribble"})
-    ballot("Corrected vote: Treasurer box 1 scribbled out, X in box 2 -> box 2 counts",
+    ballot("Treasurer box 1 scribbled out, X in box 2 -> both boxes touched, no vote for the post",
            {**clear(5), P(5)[0]: "scribble", P(5)[1]: "x"})
     ballot("Tick marks instead of X (President, Office Secretary, Sports Secretary) -> counted",
            {**clear(1, 7, 11), P(1)[1]: "tick", P(7)[0]: "tick", P(11)[1]: "tick"})
     ballot("Single slash '/' instead of X (Asst. Gen. Secretary, Drama Secretary) -> counted",
            {**clear(4, 10), P(4)[0]: "slash", P(10)[1]: "slash"})
-    ballot("Only a small dot in the Cultural Secretary box -> no vote for that post",
+    ballot("Only a small dot in the Cultural Secretary box, the other box empty -> the dot counts",
            {**clear(9), P(9)[0]: "dot"})
     ballot("Rule (ka): 4 Executive Members marked (3 allowed) -> all 4 void",
            {**clear(13), **{v: "x" for v in P(13)[:4]}})
@@ -431,14 +432,18 @@ def main() -> None:
 
             for p in positions:
                 chosen = [c for c in p["candidates"] if c["voter_no"] in plan["marks"]]
-                usable = [c for c in chosen if plan["marks"][c["voter_no"]] in RESULT and plan["marks"][c["voter_no"]] not in VOID_KINDS | NO_VOTE_KINDS]
-                over = len(usable) > p["max_selections"]
+                # rule (ka): every box the voter touched counts towards the limit - a clear
+                # mark, an unclear one (dot) and one that is void by rules (kha)/(ga)
+                touched = [c for c in chosen if plan["marks"][c["voter_no"]] not in NO_VOTE_KINDS]
+                usable = [c for c in touched if plan["marks"][c["voter_no"]] in COUNTED_KINDS]
+                over = len(touched) > p["max_selections"]
                 for c in chosen:
                     kind = plan["marks"][c["voter_no"]]
                     result = RESULT[kind]
-                    if result == "counted" and over:
-                        result = "VOID - rule (ka): more marks than allowed for the post"
-                    if result == "counted":
+                    if kind in COUNTED_KINDS and over:
+                        result = ("VOID - rule (ka): more marks than allowed for the post" if len(usable) > p["max_selections"]
+                                  else "VOID - rule (ka): both boxes of the post are touched")
+                    if result.startswith("counted"):
                         tally[c["voter_no"]] += 1
                     key_rows.append({
                         "file": path.name, "paper_no": printed or "(blank)",
@@ -486,7 +491,7 @@ def review_reason(plan: dict, positions: list[dict]) -> str:
     if kinds & VOID_KINDS:
         reasons.append("void mark")
     for p in positions:
-        usable = [c for c in p["candidates"] if plan["marks"].get(c["voter_no"]) in ("x", "tick", "slash", "pencil")]
+        usable = [c for c in p["candidates"] if plan["marks"].get(c["voter_no"]) in COUNTED_KINDS]
         if len(usable) > p["max_selections"]:
             reasons.append("over-vote")
             break
@@ -508,9 +513,10 @@ def readme(all_plans: list[dict], total: int, folder: str) -> str:
         "per post with the post name in the middle column and its two candidates on either side:",
         "  voter no + candidate name | box | post name | voter no + candidate name | box",
         "Executive Member (6 candidates, up to 3 votes) takes 3 rows with one merged post-name cell.",
-        "Footer: the instructions (ka/kha/ga), Election Commissioner and seal; bar code bottom left.",
+        "Footer: the instructions (ka/kha/ga), Election Commissioner and seal; bar code bottom centre.",
         "Same form as 17-11-2026 (same names, same table, same place on the page) plus:",
-        f"  - QR code (top left) and bar code (bottom left), both reading {BALLOT_CODE} on every paper;",
+        f"  - QR code (top left) and bar code (bottom centre, under the candidate table; it was at the",
+        f"    bottom left on the form of 19-11-2026), both reading {BALLOT_CODE} on every paper;",
         "    the counting system does not need them, they mark the paper as a ballot of this election.",
         "  - a larger number box: the form is printed WITHOUT a number and the ballot paper number is",
         f"    stamped into the box with the automatic numbering machine ({STAMP_DIGITS} digits here: 000001 ...).",

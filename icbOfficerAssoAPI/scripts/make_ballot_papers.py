@@ -5,7 +5,7 @@ Run from the icbOfficerAssoAPI folder:
     .venv\Scripts\python scripts\make_ballot_papers.py                 the empty form only
     .venv\Scripts\python scripts\make_ballot_papers.py 1 460           and numbered papers
 
-The form is <project>/Sample Ballots/19-11-2026/Blank ballot/Blank_ballot_form.docx
+The form is <project>/Sample Ballots/21-11-2026/Blank ballot/Blank_ballot_form.docx
 (QR code, bar code and the large number box: scripts/make_ballot_form.py; read
 only here).  Written next to it:
 
@@ -30,7 +30,7 @@ import pypdfium2 as pdfium
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-FOLDER = ROOT / "Sample Ballots" / "19-11-2026"
+FOLDER = ROOT / "Sample Ballots" / "21-11-2026"
 TEMPLATE = FOLDER / "Blank ballot" / "Blank_ballot_form.docx"
 DPI = 200
 

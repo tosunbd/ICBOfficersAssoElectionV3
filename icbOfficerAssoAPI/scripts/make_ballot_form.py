@@ -1,14 +1,15 @@
-r"""Build the ballot form of 19-11-2026 from the form approved on 17-11-2026.
+r"""Build the ballot form of 21-11-2026 from the form approved on 17-11-2026.
 
     .venv\Scripts\python scripts\make_ballot_form.py [--force]
 
 Source (read only):  <project>/Sample Ballots/17-11-2026/Blank ballot/Blank_ballot_form.docx
-Written:             <project>/Sample Ballots/19-11-2026/Blank ballot/Blank_ballot_form.docx
+Written:             <project>/Sample Ballots/21-11-2026/Blank ballot/Blank_ballot_form.docx
 
 Three changes, nothing else on the form is touched:
 
 1. QR code at the top left, beside the title            (floating picture)
-2. bar code (Code 128) at the bottom left, below the instructions  (floating picture)
+2. bar code (Code 128) at the bottom, below the instructions, centred under the
+   candidate table (floating picture; it was at the bottom left on the form of 19-11-2026)
 3. a larger ballot paper number box (32 x 12 mm instead of 15 x 10 mm): the number
    is stamped with an automatic numbering machine and must fit inside the box.
 
@@ -34,13 +35,14 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "Sample Ballots" / "17-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
-DEST = ROOT / "Sample Ballots" / "19-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
+DEST = ROOT / "Sample Ballots" / "21-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
 
 BALLOT_CODE = "ICBOA-20-2026"   # ICB Officers' Association, 20th council, election 2026
 
 EMU = 36000                      # per mm
 QR_MM = (15.1, 9.5, 12.5)        # left, top (from the page corner), side
-BARCODE_MM = (15.1, 276.0, 9.0)  # left, top, height
+TABLE_MM = (15.1, 184.9)         # candidate table: left edge (= left margin), width
+BARCODE_MM = (276.0, 9.0)        # top, height; left/right: centred under the candidate table
 BARCODE_MODULE_MM = 0.33         # width of the narrowest bar
 
 # title table: title | "ballot paper no" | gap | number box | spacer   (twips, 1 mm = 56.7)
@@ -155,7 +157,8 @@ def build_document(xml: str, barcode_w_mm: float) -> str:
     host = xml.index("</w:p>", xml.index("</w:tbl>"))
     pictures = (
         _picture("rId101", 101, "Ballot QR code", QR_MM[0], QR_MM[1], QR_MM[2], QR_MM[2])
-        + _picture("rId102", 102, "Ballot bar code", BARCODE_MM[0], BARCODE_MM[1], barcode_w_mm, BARCODE_MM[2])
+        + _picture("rId102", 102, "Ballot bar code", TABLE_MM[0] + (TABLE_MM[1] - barcode_w_mm) / 2, BARCODE_MM[0],
+                   barcode_w_mm, BARCODE_MM[1])
     )
     return xml[:host] + pictures + xml[host:]
 
