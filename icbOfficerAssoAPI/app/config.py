@@ -65,6 +65,11 @@ class Settings(BaseSettings):
     OCR_DPI: int = 200                  # render resolution for PDF pages
     BALLOT_COLUMNS: int = 2             # candidates printed side by side per row
     MARK_THRESHOLD: float = 0.06        # ink ratio inside a box that counts as "marked"
+    # A box with less ink than MARK_THRESHOLD has still been touched when one single patch
+    # of ink (a dot, a light stroke) covers at least this share of it; scanner specks are
+    # far smaller.  A touched box is a mark: counted when it is the only one for its
+    # post, and it voids the post when another box of the post is marked too.
+    FAINT_MARK_THRESHOLD: float = 0.008
     LOW_CONFIDENCE_THRESHOLD: float = 0.65  # below this the ballot is flagged for review
     # Ballot rules (printed on the paper):
     #  (kha) the X must stay inside the box  -> ink around the box voids the vote

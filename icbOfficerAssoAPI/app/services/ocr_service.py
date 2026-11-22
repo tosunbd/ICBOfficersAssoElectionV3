@@ -77,7 +77,7 @@ class MarkResult:
     confidence: float
     density: float
     box: Box | None
-    kind: str = "none"                # none | x | mark | outside | smudged
+    kind: str = "none"                # none | x | mark | faint | outside | smudged
     void_reason: str | None = None     # set when the ballot rules make this vote invalid
     outside_ink: float = 0.0           # ink ratio in the ring around the box
 
@@ -445,6 +445,20 @@ class OCRService:
         c2 = float(np.count_nonzero(ink & d2)) / max(1, np.count_nonzero(d2))
         return c1, c2
 
+    @staticmethod
+    def _largest_blob(roi: np.ndarray) -> float:
+        """Size of the largest connected patch of ink in the box, as a share of the box.
+
+        Tells a pen touch (one dot or stroke) from scanner speckle: dust gives many
+        tiny specks that can add up to the same ink ratio but never form one patch.
+        """
+        if roi.size == 0:
+            return 0.0
+        count, _, stats, _ = cv2.connectedComponentsWithStats((roi > 0).astype(np.uint8), 8)
+        if count <= 1:
+            return 0.0
+        return float(stats[1:, cv2.CC_STAT_AREA].max()) / roi.size
+
     def _ring_ink(self, clean: np.ndarray, box: Box) -> float:
         """Ink ratio in the ring just outside the box (grid lines removed)."""
         h, w = clean.shape
@@ -468,7 +482,8 @@ class OCRService:
         """Classify one box according to the printed ballot rules.
 
         Returns dict(is_marked, confidence, density, outside_ink, kind, void_reason).
-        kinds: none | x | mark (ink but not X-shaped) | outside (rule kha) | smudged (rule ga)
+        kinds: none | x | mark (ink but not X-shaped) | faint (touched, not a clear mark)
+               | outside (rule kha) | smudged (rule ga)
         """
         margin = max(3, int(min(box.w, box.h) * 0.15))
         roi = binary[box.y + margin: box.y + box.h - margin, box.x + margin: box.x + box.w - margin]
@@ -504,6 +519,12 @@ class OCRService:
             if not x_like:
                 confidence *= 0.85  # a tick or a dot: counted, but the committee should glance at it
             result.update(is_marked=True, kind="x" if x_like else "mark", confidence=round(min(confidence, 1.0), 3))
+            return result
+        if self._largest_blob(roi) >= settings.FAINT_MARK_THRESHOLD:
+            # the voter touched the box without making a clear mark: it is their vote when no
+            # other box of the post is touched (and voids the post when another one is).
+            # The low confidence sends the ballot to the committee for a look.
+            result.update(is_marked=True, kind="faint", confidence=0.5)
             return result
         result.update(confidence=round(confidence, 3))
         return result
@@ -639,7 +660,7 @@ class OCRService:
                 colour = (40, 170, 40) if mark.is_marked else (160, 160, 160)
             cv2.rectangle(canvas, (b.x - 4, b.y - 4), (b.x + b.w + 4, b.y + b.h + 4), colour, 3)
             if mark.is_marked:
-                label = mark.kind.upper() if mark.void_reason else f"{mark.confidence:.2f}"
+                label = mark.kind.upper() if mark.void_reason or mark.kind == "faint" else f"{mark.confidence:.2f}"
                 cv2.putText(
                     canvas, label, (b.x, max(b.y - 8, 12)),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, colour, 1, cv2.LINE_AA,

@@ -51,13 +51,13 @@ WHAT EACH BALLOT TESTS                                                         e
         scan: 200 DPI;  -> Needs review: void mark
   iMG_0006.jpg      paper 000006  Rule (ga): General Secretary box scribbled over -> void
         scan: 200 DPI;  -> Needs review: void mark
-  ImG_0007.jpeg     paper 000007  Corrected vote: Treasurer box 1 scribbled out, X in box 2 -> box 2 counts
+  ImG_0007.jpeg     paper 000007  Treasurer box 1 scribbled out, X in box 2 -> both boxes touched, no vote for the post
         scan: 200 DPI;  -> Needs review: void mark
   img_0008.JPG      paper 000008  Tick marks instead of X (President, Office Secretary, Sports Secretary) -> counted
         scan: 200 DPI;  -> Processed (a tick / slash counts; a light one lowers the confidence and may also ask for review)
   IMG_0009.JPEG     paper 000009  Single slash '/' instead of X (Asst. Gen. Secretary, Drama Secretary) -> counted
         scan: 200 DPI;  -> Processed (a tick / slash counts; a light one lowers the confidence and may also ask for review)
-  Img_0010.Jpg      paper 000010  Only a small dot in the Cultural Secretary box -> no vote for that post
+  Img_0010.Jpg      paper 000010  Only a small dot in the Cultural Secretary box, the other box empty -> the dot counts
         scan: 200 DPI;  -> Processed
   iMg_0011.jPeg     paper 000011  Rule (ka): 4 Executive Members marked (3 allowed) -> all 4 void
         scan: 200 DPI;  -> Needs review: over-vote

@@ -195,16 +195,19 @@ class BallotProcessor:
                 if mark.void_reason:
                     void_marks += 1
                     warnings.append(f"Candidate {mark.candidate_id}: {mark.void_reason}")
+                elif mark.kind == "faint":
+                    warnings.append(f"Candidate {mark.candidate_id}: unclear mark in the box (counted when it is the only mark for the post)")
 
-        # Rule (ka): one X per candidate, at most `max_selections` per post.
-        # Marks already void by rules (kha)/(ga) do not count towards the limit.
+        # Rule (ka): one mark per candidate, at most `max_selections` per post.
+        # Every box the voter touched counts towards the limit: a clear mark, an unclear
+        # one, and one that is void by rules (kha)/(ga).  A voter who touched both boxes of
+        # a post has not voted for it; a single mark, however unclear, is their vote.
         over_voted: set[int] = set()
         for position_id, marks in marks_by_position.items():
-            usable = [m for m in marks if not m.void_reason]
-            if len(usable) > max_by_position.get(position_id, 1):
+            if len(marks) > max_by_position.get(position_id, 1):
                 over_voted.add(position_id)
                 warnings.append(
-                    f"Rule (ka): position {position_id} has {len(usable)} marks but only "
+                    f"Rule (ka): position {position_id} has {len(marks)} marks but only "
                     f"{max_by_position.get(position_id, 1)} allowed (votes not counted)"
                 )
 

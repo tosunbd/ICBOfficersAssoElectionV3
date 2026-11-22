@@ -52,17 +52,20 @@ def draw_ballot(
     ballot_no: str | None = None,
     outside: set[str] | None = None,
     smudged: set[str] | None = None,
+    faint: set[str] | None = None,
 ) -> Image.Image:
     """Draw a ballot.
 
     positions: [{"name": str, "candidates": [{"voter_no": str, "name": str}, ...]}]
     marked:    voter_no values to mark with an X inside the box
     outside:   voter_no values whose X is drawn crossing the box border (rule kha violation)
+    faint:     voter_no values whose box only carries a short stroke (an unclear mark)
     smudged:   voter_no values whose box is scribbled solid (rule ga violation)
     ballot_no: printed in the ballot-number box at the top right
     """
     outside = outside or set()
     smudged = smudged or set()
+    faint = faint or set()
     rng = random.Random(seed)
     img = Image.new("RGB", (PAGE_W, PAGE_H), "white")
     draw = ImageDraw.Draw(img)
@@ -115,6 +118,9 @@ def draw_ballot(
                     over = 34
                     draw.line([(bx - over, by - over // 2), (bx + BOX_W + over, by + BOX_H + over // 2)], fill="black", width=6)
                     draw.line([(bx + BOX_W + over, by - over // 2), (bx - over, by + BOX_H + over // 2)], fill="black", width=6)
+                elif cand["voter_no"] in faint:
+                    # the pen only touched the box: a short stroke, far too small for an X
+                    draw.line([(bx + BOX_W // 2 - 13, by + BOX_H // 2 - 9), (bx + BOX_W // 2 + 13, by + BOX_H // 2 + 9)], fill="black", width=6)
                 elif cand["voter_no"] in marked:
                     pad = 10
                     draw.line([(bx + pad + jitter(), by + pad + jitter()), (bx + BOX_W - pad + jitter(), by + BOX_H - pad + jitter())], fill="black", width=6)
