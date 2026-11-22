@@ -1,0 +1,445 @@
+﻿ballot_no,file,scan,post_no,post,voter_no,candidate,result
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0001,pdfs/Ballot_0001.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,4,Asst. General Secretary,-,(no vote),-
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0002,pdfs/Ballot_0002.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,8,Publication Secretary,-,(no vote),-
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0003,pdfs/Ballot_0003.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,3,General Secretary,105,Abdul Hannan Sarker,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,7,Office Secretary,-,(no vote),-
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,10,Drama Secretary,-,(no vote),-
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0004,pdfs/Ballot_0004.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,1,President,-,(no vote),-
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,3,General Secretary,105,Abdul Hannan Sarker,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,6,Organizing Secretary,-,(no vote),-
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0005,pdfs/Ballot_0005.pdf,PDF 200 DPI,13,Executive Member,-,(no vote),-
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0006,pdfs/Ballot_0006.pdf,PDF 200 DPI,13,Executive Member,-,(no vote),-
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,3,General Secretary,105,Abdul Hannan Sarker,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0007,pdfs/Ballot_0007.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,1,President,-,(no vote),-
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,2,Vice President,-,(no vote),-
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0008,pdfs/Ballot_0008.pdf,PDF 200 DPI,13,Executive Member,-,(no vote),-
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,7,Office Secretary,-,(no vote),-
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,10,Drama Secretary,-,(no vote),-
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0009,pdfs/Ballot_0009.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,5,Treasurer,-,(no vote),-
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0010,pdfs/Ballot_0010.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,2,Vice President,-,(no vote),-
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0011,pdfs/Ballot_0011.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,3,General Secretary,-,(no vote),-
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0012,pdfs/Ballot_0012.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,VOID - rule (ka): more marks than allowed
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,1,President,102,Kazi Nurul Amin,VOID - rule (ka): more marks than allowed
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,3,General Secretary,105,Abdul Hannan Sarker,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,4,Asst. General Secretary,-,(no vote),-
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,12,Hospitality Secretary,-,(no vote),-
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0013,pdfs/Ballot_0013.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,VOID - rule (kha): X outside the box
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0014,pdfs/Ballot_0014.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,3,General Secretary,106,Sultana Razia,VOID - rule (ga): box scribbled over
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,10,Drama Secretary,-,(no vote),-
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0015,pdfs/Ballot_0015.pdf,PDF 200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0016,images/Ballot_0016.jpg,200 DPI,1,President,102,Kazi Nurul Amin,counted
+0016,images/Ballot_0016.jpg,200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0016,images/Ballot_0016.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0016,images/Ballot_0016.jpg,200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0016,images/Ballot_0016.jpg,200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0016,images/Ballot_0016.jpg,200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0016,images/Ballot_0016.jpg,200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0016,images/Ballot_0016.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0016,images/Ballot_0016.jpg,200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0016,images/Ballot_0016.jpg,200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0016,images/Ballot_0016.jpg,200 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0016,images/Ballot_0016.jpg,200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0016,images/Ballot_0016.jpg,200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0016,images/Ballot_0016.jpg,200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0016,images/Ballot_0016.jpg,200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0017,images/Ballot_0017.jpg,200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0017,images/Ballot_0017.jpg,200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0017,images/Ballot_0017.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0017,images/Ballot_0017.jpg,200 DPI,4,Asst. General Secretary,-,(no vote),-
+0017,images/Ballot_0017.jpg,200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0017,images/Ballot_0017.jpg,200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0017,images/Ballot_0017.jpg,200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0017,images/Ballot_0017.jpg,200 DPI,8,Publication Secretary,-,(no vote),-
+0017,images/Ballot_0017.jpg,200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0017,images/Ballot_0017.jpg,200 DPI,10,Drama Secretary,-,(no vote),-
+0017,images/Ballot_0017.jpg,200 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0017,images/Ballot_0017.jpg,200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0017,images/Ballot_0017.jpg,200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0017,images/Ballot_0017.jpg,200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0017,images/Ballot_0017.jpg,200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0018,images/Ballot_0018.jpg,300 DPI,1,President,102,Kazi Nurul Amin,counted
+0018,images/Ballot_0018.jpg,300 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0018,images/Ballot_0018.jpg,300 DPI,3,General Secretary,106,Sultana Razia,counted
+0018,images/Ballot_0018.jpg,300 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0018,images/Ballot_0018.jpg,300 DPI,5,Treasurer,-,(no vote),-
+0018,images/Ballot_0018.jpg,300 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0018,images/Ballot_0018.jpg,300 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0018,images/Ballot_0018.jpg,300 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0018,images/Ballot_0018.jpg,300 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0018,images/Ballot_0018.jpg,300 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0018,images/Ballot_0018.jpg,300 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0018,images/Ballot_0018.jpg,300 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0018,images/Ballot_0018.jpg,300 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0018,images/Ballot_0018.jpg,300 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0018,images/Ballot_0018.jpg,300 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0019,images/Ballot_0019.jpg,150 DPI,1,President,102,Kazi Nurul Amin,counted
+0019,images/Ballot_0019.jpg,150 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0019,images/Ballot_0019.jpg,150 DPI,3,General Secretary,106,Sultana Razia,counted
+0019,images/Ballot_0019.jpg,150 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0019,images/Ballot_0019.jpg,150 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0019,images/Ballot_0019.jpg,150 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0019,images/Ballot_0019.jpg,150 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0019,images/Ballot_0019.jpg,150 DPI,8,Publication Secretary,-,(no vote),-
+0019,images/Ballot_0019.jpg,150 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0019,images/Ballot_0019.jpg,150 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0019,images/Ballot_0019.jpg,150 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0019,images/Ballot_0019.jpg,150 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0019,images/Ballot_0019.jpg,150 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0019,images/Ballot_0019.jpg,150 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0019,images/Ballot_0019.jpg,150 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),1,President,102,Kazi Nurul Amin,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),2,Vice President,103,Shamsul Haque Chowdhury,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),3,General Secretary,106,Sultana Razia,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),4,Asst. General Secretary,108,Farhana Yasmin,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),5,Treasurer,109,Md. Jahangir Alam,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),7,Office Secretary,114,Rezaul Karim Sikder,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),8,Publication Secretary,115,Shirin Akter,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),9,Cultural Secretary,-,(no vote),-
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),10,Drama Secretary,120,Rumana Afroz,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),13,Executive Member,126,Nazmul Huda Prodhan,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0020,images/Ballot_0020.jpg,72 DPI (PDF exported to JPG),13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0021,images/Ballot_0021.jpg,scanned upside down,1,President,102,Kazi Nurul Amin,counted
+0021,images/Ballot_0021.jpg,scanned upside down,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0021,images/Ballot_0021.jpg,scanned upside down,3,General Secretary,105,Abdul Hannan Sarker,counted
+0021,images/Ballot_0021.jpg,scanned upside down,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0021,images/Ballot_0021.jpg,scanned upside down,5,Treasurer,109,Md. Jahangir Alam,counted
+0021,images/Ballot_0021.jpg,scanned upside down,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0021,images/Ballot_0021.jpg,scanned upside down,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0021,images/Ballot_0021.jpg,scanned upside down,8,Publication Secretary,115,Shirin Akter,counted
+0021,images/Ballot_0021.jpg,scanned upside down,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0021,images/Ballot_0021.jpg,scanned upside down,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0021,images/Ballot_0021.jpg,scanned upside down,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0021,images/Ballot_0021.jpg,scanned upside down,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0021,images/Ballot_0021.jpg,scanned upside down,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0021,images/Ballot_0021.jpg,scanned upside down,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0021,images/Ballot_0021.jpg,scanned upside down,13,Executive Member,129,Pranab Kumar Roy,counted
+0022,images/Ballot_0022.jpg,scanned sideways,1,President,102,Kazi Nurul Amin,counted
+0022,images/Ballot_0022.jpg,scanned sideways,2,Vice President,104,Mahbubur Rahman Khan,counted
+0022,images/Ballot_0022.jpg,scanned sideways,3,General Secretary,106,Sultana Razia,counted
+0022,images/Ballot_0022.jpg,scanned sideways,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0022,images/Ballot_0022.jpg,scanned sideways,5,Treasurer,109,Md. Jahangir Alam,counted
+0022,images/Ballot_0022.jpg,scanned sideways,6,Organizing Secretary,-,(no vote),-
+0022,images/Ballot_0022.jpg,scanned sideways,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0022,images/Ballot_0022.jpg,scanned sideways,8,Publication Secretary,115,Shirin Akter,counted
+0022,images/Ballot_0022.jpg,scanned sideways,9,Cultural Secretary,117,Sanjida Parvin,counted
+0022,images/Ballot_0022.jpg,scanned sideways,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0022,images/Ballot_0022.jpg,scanned sideways,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0022,images/Ballot_0022.jpg,scanned sideways,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0022,images/Ballot_0022.jpg,scanned sideways,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0022,images/Ballot_0022.jpg,scanned sideways,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0022,images/Ballot_0022.jpg,scanned sideways,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0023,images/Ballot_0023.jpg,200 DPI,1,President,102,Kazi Nurul Amin,counted
+0023,images/Ballot_0023.jpg,200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0023,images/Ballot_0023.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0023,images/Ballot_0023.jpg,200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0023,images/Ballot_0023.jpg,200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0023,images/Ballot_0023.jpg,200 DPI,6,Organizing Secretary,-,(no vote),-
+0023,images/Ballot_0023.jpg,200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0023,images/Ballot_0023.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0023,images/Ballot_0023.jpg,200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0023,images/Ballot_0023.jpg,200 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0023,images/Ballot_0023.jpg,200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0023,images/Ballot_0023.jpg,200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0023,images/Ballot_0023.jpg,200 DPI,13,Executive Member,-,(no vote),-
+0024,images/Ballot_0024.jpg,300 DPI,1,President,102,Kazi Nurul Amin,counted
+0024,images/Ballot_0024.jpg,300 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0024,images/Ballot_0024.jpg,300 DPI,3,General Secretary,106,Sultana Razia,counted
+0024,images/Ballot_0024.jpg,300 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0024,images/Ballot_0024.jpg,300 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0024,images/Ballot_0024.jpg,300 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0024,images/Ballot_0024.jpg,300 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0024,images/Ballot_0024.jpg,300 DPI,8,Publication Secretary,116,Anisur Rahman Mondal,counted
+0024,images/Ballot_0024.jpg,300 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0024,images/Ballot_0024.jpg,300 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0024,images/Ballot_0024.jpg,300 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0024,images/Ballot_0024.jpg,300 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0024,images/Ballot_0024.jpg,300 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0024,images/Ballot_0024.jpg,300 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0024,images/Ballot_0024.jpg,300 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0025,images/Ballot_0025.jpg,200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0025,images/Ballot_0025.jpg,200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0025,images/Ballot_0025.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0025,images/Ballot_0025.jpg,200 DPI,4,Asst. General Secretary,108,Farhana Yasmin,counted
+0025,images/Ballot_0025.jpg,200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0025,images/Ballot_0025.jpg,200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0025,images/Ballot_0025.jpg,200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0025,images/Ballot_0025.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0025,images/Ballot_0025.jpg,200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0025,images/Ballot_0025.jpg,200 DPI,10,Drama Secretary,-,(no vote),-
+0025,images/Ballot_0025.jpg,200 DPI,11,Sports Secretary,-,(no vote),-
+0025,images/Ballot_0025.jpg,200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0025,images/Ballot_0025.jpg,200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0025,images/Ballot_0025.jpg,200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0025,images/Ballot_0025.jpg,200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted
+0026,images/Ballot_0026.jpg,150 DPI,1,President,101,Md. Rafiqul Islam,counted
+0026,images/Ballot_0026.jpg,150 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0026,images/Ballot_0026.jpg,150 DPI,3,General Secretary,106,Sultana Razia,counted
+0026,images/Ballot_0026.jpg,150 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0026,images/Ballot_0026.jpg,150 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0026,images/Ballot_0026.jpg,150 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0026,images/Ballot_0026.jpg,150 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0026,images/Ballot_0026.jpg,150 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0026,images/Ballot_0026.jpg,150 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0026,images/Ballot_0026.jpg,150 DPI,10,Drama Secretary,119,Tapan Kumar Biswas,counted
+0026,images/Ballot_0026.jpg,150 DPI,11,Sports Secretary,122,Subrata Kumar Saha,counted
+0026,images/Ballot_0026.jpg,150 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0026,images/Ballot_0026.jpg,150 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0026,images/Ballot_0026.jpg,150 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0026,images/Ballot_0026.jpg,150 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0027,images/Ballot_0027.jpg,200 DPI,1,President,102,Kazi Nurul Amin,counted
+0027,images/Ballot_0027.jpg,200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0027,images/Ballot_0027.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0027,images/Ballot_0027.jpg,200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0027,images/Ballot_0027.jpg,200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0027,images/Ballot_0027.jpg,200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0027,images/Ballot_0027.jpg,200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0027,images/Ballot_0027.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0027,images/Ballot_0027.jpg,200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0027,images/Ballot_0027.jpg,200 DPI,10,Drama Secretary,-,(no vote),-
+0027,images/Ballot_0027.jpg,200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0027,images/Ballot_0027.jpg,200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0027,images/Ballot_0027.jpg,200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0027,images/Ballot_0027.jpg,200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0027,images/Ballot_0027.jpg,200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0028,images/Ballot_0028.jpg,200 DPI,1,President,101,Md. Rafiqul Islam,VOID - rule (ka): more marks than allowed
+0028,images/Ballot_0028.jpg,200 DPI,1,President,102,Kazi Nurul Amin,VOID - rule (ka): more marks than allowed
+0028,images/Ballot_0028.jpg,200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,counted
+0028,images/Ballot_0028.jpg,200 DPI,3,General Secretary,106,Sultana Razia,counted
+0028,images/Ballot_0028.jpg,200 DPI,4,Asst. General Secretary,-,(no vote),-
+0028,images/Ballot_0028.jpg,200 DPI,5,Treasurer,-,(no vote),-
+0028,images/Ballot_0028.jpg,200 DPI,6,Organizing Secretary,112,Golam Mostafa Talukder,counted
+0028,images/Ballot_0028.jpg,200 DPI,7,Office Secretary,114,Rezaul Karim Sikder,counted
+0028,images/Ballot_0028.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0028,images/Ballot_0028.jpg,200 DPI,9,Cultural Secretary,118,Ashraful Alam Sohel,counted
+0028,images/Ballot_0028.jpg,200 DPI,10,Drama Secretary,-,(no vote),-
+0028,images/Ballot_0028.jpg,200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0028,images/Ballot_0028.jpg,200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0028,images/Ballot_0028.jpg,200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0028,images/Ballot_0028.jpg,200 DPI,13,Executive Member,127,Jesmin Ara Begum,counted
+0028,images/Ballot_0028.jpg,200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0029,images/Ballot_0029.jpg,200 DPI,1,President,101,Md. Rafiqul Islam,counted
+0029,images/Ballot_0029.jpg,200 DPI,2,Vice President,103,Shamsul Haque Chowdhury,VOID - rule (kha): X outside the box
+0029,images/Ballot_0029.jpg,200 DPI,3,General Secretary,105,Abdul Hannan Sarker,counted
+0029,images/Ballot_0029.jpg,200 DPI,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan,counted
+0029,images/Ballot_0029.jpg,200 DPI,5,Treasurer,110,Nasrin Sultana,counted
+0029,images/Ballot_0029.jpg,200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0029,images/Ballot_0029.jpg,200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0029,images/Ballot_0029.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0029,images/Ballot_0029.jpg,200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0029,images/Ballot_0029.jpg,200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0029,images/Ballot_0029.jpg,200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0029,images/Ballot_0029.jpg,200 DPI,12,Hospitality Secretary,124,Mizanur Rahman Howlader,counted
+0029,images/Ballot_0029.jpg,200 DPI,13,Executive Member,125,Habibur Rahman Sheikh,counted
+0029,images/Ballot_0029.jpg,200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0029,images/Ballot_0029.jpg,200 DPI,13,Executive Member,129,Pranab Kumar Roy,counted
+0030,images/Ballot_0030.jpg,200 DPI,1,President,102,Kazi Nurul Amin,counted
+0030,images/Ballot_0030.jpg,200 DPI,2,Vice President,104,Mahbubur Rahman Khan,counted
+0030,images/Ballot_0030.jpg,200 DPI,3,General Secretary,106,Sultana Razia,VOID - rule (ga): box scribbled over
+0030,images/Ballot_0030.jpg,200 DPI,4,Asst. General Secretary,-,(no vote),-
+0030,images/Ballot_0030.jpg,200 DPI,5,Treasurer,109,Md. Jahangir Alam,counted
+0030,images/Ballot_0030.jpg,200 DPI,6,Organizing Secretary,111,Shahidul Islam Mridha,counted
+0030,images/Ballot_0030.jpg,200 DPI,7,Office Secretary,113,Zakir Hossain Patwary,counted
+0030,images/Ballot_0030.jpg,200 DPI,8,Publication Secretary,115,Shirin Akter,counted
+0030,images/Ballot_0030.jpg,200 DPI,9,Cultural Secretary,117,Sanjida Parvin,counted
+0030,images/Ballot_0030.jpg,200 DPI,10,Drama Secretary,120,Rumana Afroz,counted
+0030,images/Ballot_0030.jpg,200 DPI,11,Sports Secretary,121,Kamrul Hasan Bepari,counted
+0030,images/Ballot_0030.jpg,200 DPI,12,Hospitality Secretary,123,Dilruba Akhter,counted
+0030,images/Ballot_0030.jpg,200 DPI,13,Executive Member,126,Nazmul Huda Prodhan,counted
+0030,images/Ballot_0030.jpg,200 DPI,13,Executive Member,128,Iqbal Mahmud Chowdhury,counted
+0030,images/Ballot_0030.jpg,200 DPI,13,Executive Member,130,Md. Shafiqul Alam Munshi,counted

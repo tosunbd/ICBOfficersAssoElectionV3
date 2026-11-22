@@ -1,0 +1,17 @@
+Resource folder = F:\Work Place\Miscellaneous\02 Office - ICB\ICB Officers' Association
+read all file from the folder to analyse the below description to make the software
+
+In my institution, there is an association named "ICB Officers' Association". In this association, there is voting placed every 2 years for the selection of the elected members. There are 15 elected member positions. Now they want me make a system for the votting. Every member will vote (up to 1000 members)  in a predefined paper format with a pen, and one person will scan the paper and it will be placed in a scanned folder, and the running system will be updated with the counting and position of each nominee's votes and other positions as well and will be placed in the folder named "Scanned" file (which reading process is completed) to a folder named "Completed ".
+
+The software will read the scanned PDF file from the Scanned folder, read data from it, and update it in the database with credentials, updated the dashboard page in real time. 
+
+Is it possible to read a PDF file using Python FastAPI or a Python-based backend and the latest version of the Next.js frontend (admin and user panel)? If so, give me the database prototype, design and what would be the best way to implement it: stack, languages, and other things needed for it. I will implement it with Antigravity.
+
+For fronend make a folder name = icbOfficerAssoUI and for backend folder name = icbOfficerAssoAPI and put the frontend and backend code sperated. Here in the root folder enable docker capabilities and can compile the whole code (backend + fronend) from the root folder and can run it from their.
+
+Database Name = icbOfficerAssoDB
+and database will a SQLite DB.
+
+
+
+

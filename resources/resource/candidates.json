@@ -1,0 +1,256 @@
+[
+  {
+    "position_order": 1,
+    "name": "President",
+    "name_bn": "সভাপতি",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "101",
+        "name": "Md. Rafiqul Islam",
+        "name_bn": "মোঃ রফিকুল ইসলাম"
+      },
+      {
+        "voter_no": "102",
+        "name": "Kazi Nurul Amin",
+        "name_bn": "কাজী নুরুল আমিন"
+      }
+    ]
+  },
+  {
+    "position_order": 2,
+    "name": "Vice President",
+    "name_bn": "সহ-সভাপতি",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "103",
+        "name": "Shamsul Haque Chowdhury",
+        "name_bn": "শামসুল হক চৌধুরী"
+      },
+      {
+        "voter_no": "104",
+        "name": "Mahbubur Rahman Khan",
+        "name_bn": "মাহবুবুর রহমান খান"
+      }
+    ]
+  },
+  {
+    "position_order": 3,
+    "name": "General Secretary",
+    "name_bn": "সাধারণ সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "105",
+        "name": "Abdul Hannan Sarker",
+        "name_bn": "আব্দুল হান্নান সরকার"
+      },
+      {
+        "voter_no": "106",
+        "name": "Sultana Razia",
+        "name_bn": "সুলতানা রাজিয়া"
+      }
+    ]
+  },
+  {
+    "position_order": 4,
+    "name": "Asst. General Secretary",
+    "name_bn": "সহকারী সাধারণ সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "107",
+        "name": "Tanvir Ahmed Bhuiyan",
+        "name_bn": "তানভীর আহমেদ ভূঁইয়া"
+      },
+      {
+        "voter_no": "108",
+        "name": "Farhana Yasmin",
+        "name_bn": "ফারহানা ইয়াসমিন"
+      }
+    ]
+  },
+  {
+    "position_order": 5,
+    "name": "Treasurer",
+    "name_bn": "কোষাধ্যক্ষ",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "109",
+        "name": "Md. Jahangir Alam",
+        "name_bn": "মোঃ জাহাঙ্গীর আলম"
+      },
+      {
+        "voter_no": "110",
+        "name": "Nasrin Sultana",
+        "name_bn": "নাসরিন সুলতানা"
+      }
+    ]
+  },
+  {
+    "position_order": 6,
+    "name": "Organizing Secretary",
+    "name_bn": "সাংগঠনিক সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "111",
+        "name": "Shahidul Islam Mridha",
+        "name_bn": "শহিদুল ইসলাম মৃধা"
+      },
+      {
+        "voter_no": "112",
+        "name": "Golam Mostafa Talukder",
+        "name_bn": "গোলাম মোস্তফা তালুকদার"
+      }
+    ]
+  },
+  {
+    "position_order": 7,
+    "name": "Office Secretary",
+    "name_bn": "দপ্তর সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "113",
+        "name": "Zakir Hossain Patwary",
+        "name_bn": "জাকির হোসেন পাটোয়ারী"
+      },
+      {
+        "voter_no": "114",
+        "name": "Rezaul Karim Sikder",
+        "name_bn": "রেজাউল করিম সিকদার"
+      }
+    ]
+  },
+  {
+    "position_order": 8,
+    "name": "Publication Secretary",
+    "name_bn": "প্রকাশনা সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "115",
+        "name": "Shirin Akter",
+        "name_bn": "শিরিন আক্তার"
+      },
+      {
+        "voter_no": "116",
+        "name": "Anisur Rahman Mondal",
+        "name_bn": "আনিসুর রহমান মণ্ডল"
+      }
+    ]
+  },
+  {
+    "position_order": 9,
+    "name": "Cultural Secretary",
+    "name_bn": "সাংস্কৃতিক সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "117",
+        "name": "Sanjida Parvin",
+        "name_bn": "সানজিদা পারভীন"
+      },
+      {
+        "voter_no": "118",
+        "name": "Ashraful Alam Sohel",
+        "name_bn": "আশরাফুল আলম সোহেল"
+      }
+    ]
+  },
+  {
+    "position_order": 10,
+    "name": "Drama Secretary",
+    "name_bn": "নাট্য সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "119",
+        "name": "Tapan Kumar Biswas",
+        "name_bn": "তপন কুমার বিশ্বাস"
+      },
+      {
+        "voter_no": "120",
+        "name": "Rumana Afroz",
+        "name_bn": "রুমানা আফরোজ"
+      }
+    ]
+  },
+  {
+    "position_order": 11,
+    "name": "Sports Secretary",
+    "name_bn": "ক্রীড়া সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "121",
+        "name": "Kamrul Hasan Bepari",
+        "name_bn": "কামরুল হাসান বেপারী"
+      },
+      {
+        "voter_no": "122",
+        "name": "Subrata Kumar Saha",
+        "name_bn": "সুব্রত কুমার সাহা"
+      }
+    ]
+  },
+  {
+    "position_order": 12,
+    "name": "Hospitality Secretary",
+    "name_bn": "আপ্যায়ন সম্পাদক",
+    "max_selections": 1,
+    "candidates": [
+      {
+        "voter_no": "123",
+        "name": "Dilruba Akhter",
+        "name_bn": "দিলরুবা আখতার"
+      },
+      {
+        "voter_no": "124",
+        "name": "Mizanur Rahman Howlader",
+        "name_bn": "মিজানুর রহমান হাওলাদার"
+      }
+    ]
+  },
+  {
+    "position_order": 13,
+    "name": "Executive Member",
+    "name_bn": "নির্বাহী সদস্য",
+    "max_selections": 3,
+    "candidates": [
+      {
+        "voter_no": "125",
+        "name": "Habibur Rahman Sheikh",
+        "name_bn": "হাবিবুর রহমান শেখ"
+      },
+      {
+        "voter_no": "126",
+        "name": "Nazmul Huda Prodhan",
+        "name_bn": "নাজমুল হুদা প্রধান"
+      },
+      {
+        "voter_no": "127",
+        "name": "Jesmin Ara Begum",
+        "name_bn": "জেসমিন আরা বেগম"
+      },
+      {
+        "voter_no": "128",
+        "name": "Iqbal Mahmud Chowdhury",
+        "name_bn": "ইকবাল মাহমুদ চৌধুরী"
+      },
+      {
+        "voter_no": "129",
+        "name": "Pranab Kumar Roy",
+        "name_bn": "প্রণব কুমার রায়"
+      },
+      {
+        "voter_no": "130",
+        "name": "Md. Shafiqul Alam Munshi",
+        "name_bn": "মোঃ শফিকুল আলম মুন্সী"
+      }
+    ]
+  }
+]

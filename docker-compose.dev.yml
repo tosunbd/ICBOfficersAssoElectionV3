@@ -1,0 +1,15 @@
+# Development override: hot reload for the API.
+#
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+#
+# (For the UI, run `npm run dev` on the host instead — it is much faster than
+# rebuilding the image after every change.)
+
+services:
+  api:
+    volumes:
+      - ./data:/app/data
+      - ./icbOfficerAssoAPI/app:/app/app
+    environment:
+      LOG_LEVEL: DEBUG
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

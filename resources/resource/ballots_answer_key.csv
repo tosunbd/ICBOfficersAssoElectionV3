@@ -1,0 +1,196 @@
+﻿ballot,post_no,post_en,voter_no,candidate
+01,1,President,101,Md. Rafiqul Islam
+01,2,Vice President,104,Mahbubur Rahman Khan
+01,3,General Secretary,106,Sultana Razia
+01,4,Asst. General Secretary,108,Farhana Yasmin
+01,5,Treasurer,109,Md. Jahangir Alam
+01,6,Organizing Secretary,111,Shahidul Islam Mridha
+01,7,Office Secretary,114,Rezaul Karim Sikder
+01,8,Publication Secretary,115,Shirin Akter
+01,9,Cultural Secretary,118,Ashraful Alam Sohel
+01,10,Drama Secretary,120,Rumana Afroz
+01,11,Sports Secretary,121,Kamrul Hasan Bepari
+01,12,Hospitality Secretary,123,Dilruba Akhter
+01,13,Executive Member,127;128;130,Jesmin Ara Begum;Iqbal Mahmud Chowdhury;Md. Shafiqul Alam Munshi
+02,1,President,101,Md. Rafiqul Islam
+02,2,Vice President,104,Mahbubur Rahman Khan
+02,3,General Secretary,106,Sultana Razia
+02,4,Asst. General Secretary,-,(no vote)
+02,5,Treasurer,110,Nasrin Sultana
+02,6,Organizing Secretary,112,Golam Mostafa Talukder
+02,7,Office Secretary,114,Rezaul Karim Sikder
+02,8,Publication Secretary,116,Anisur Rahman Mondal
+02,9,Cultural Secretary,118,Ashraful Alam Sohel
+02,10,Drama Secretary,119,Tapan Kumar Biswas
+02,11,Sports Secretary,121,Kamrul Hasan Bepari
+02,12,Hospitality Secretary,123,Dilruba Akhter
+02,13,Executive Member,126;128;130,Nazmul Huda Prodhan;Iqbal Mahmud Chowdhury;Md. Shafiqul Alam Munshi
+03,1,President,102,Kazi Nurul Amin
+03,2,Vice President,104,Mahbubur Rahman Khan
+03,3,General Secretary,106,Sultana Razia
+03,4,Asst. General Secretary,108,Farhana Yasmin
+03,5,Treasurer,110,Nasrin Sultana
+03,6,Organizing Secretary,112,Golam Mostafa Talukder
+03,7,Office Secretary,113,Zakir Hossain Patwary
+03,8,Publication Secretary,-,(no vote)
+03,9,Cultural Secretary,118,Ashraful Alam Sohel
+03,10,Drama Secretary,120,Rumana Afroz
+03,11,Sports Secretary,121,Kamrul Hasan Bepari
+03,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+03,13,Executive Member,125;128;130,Habibur Rahman Sheikh;Iqbal Mahmud Chowdhury;Md. Shafiqul Alam Munshi
+04,1,President,102,Kazi Nurul Amin
+04,2,Vice President,104,Mahbubur Rahman Khan
+04,3,General Secretary,105,Abdul Hannan Sarker
+04,4,Asst. General Secretary,108,Farhana Yasmin
+04,5,Treasurer,110,Nasrin Sultana
+04,6,Organizing Secretary,112,Golam Mostafa Talukder
+04,7,Office Secretary,-,(no vote)
+04,8,Publication Secretary,116,Anisur Rahman Mondal
+04,9,Cultural Secretary,117,Sanjida Parvin
+04,10,Drama Secretary,-,(no vote)
+04,11,Sports Secretary,121,Kamrul Hasan Bepari
+04,12,Hospitality Secretary,123,Dilruba Akhter
+04,13,Executive Member,125;127;129,Habibur Rahman Sheikh;Jesmin Ara Begum;Pranab Kumar Roy
+05,1,President,-,(no vote)
+05,2,Vice President,104,Mahbubur Rahman Khan
+05,3,General Secretary,105,Abdul Hannan Sarker
+05,4,Asst. General Secretary,108,Farhana Yasmin
+05,5,Treasurer,110,Nasrin Sultana
+05,6,Organizing Secretary,-,(no vote)
+05,7,Office Secretary,113,Zakir Hossain Patwary
+05,8,Publication Secretary,116,Anisur Rahman Mondal
+05,9,Cultural Secretary,118,Ashraful Alam Sohel
+05,10,Drama Secretary,119,Tapan Kumar Biswas
+05,11,Sports Secretary,121,Kamrul Hasan Bepari
+05,12,Hospitality Secretary,123,Dilruba Akhter
+05,13,Executive Member,-,(no vote)
+06,1,President,101,Md. Rafiqul Islam
+06,2,Vice President,104,Mahbubur Rahman Khan
+06,3,General Secretary,106,Sultana Razia
+06,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan
+06,5,Treasurer,110,Nasrin Sultana
+06,6,Organizing Secretary,111,Shahidul Islam Mridha
+06,7,Office Secretary,113,Zakir Hossain Patwary
+06,8,Publication Secretary,116,Anisur Rahman Mondal
+06,9,Cultural Secretary,117,Sanjida Parvin
+06,10,Drama Secretary,119,Tapan Kumar Biswas
+06,11,Sports Secretary,121,Kamrul Hasan Bepari
+06,12,Hospitality Secretary,123,Dilruba Akhter
+06,13,Executive Member,-,(no vote)
+07,1,President,101,Md. Rafiqul Islam
+07,2,Vice President,103,Shamsul Haque Chowdhury
+07,3,General Secretary,105,Abdul Hannan Sarker
+07,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan
+07,5,Treasurer,109,Md. Jahangir Alam
+07,6,Organizing Secretary,112,Golam Mostafa Talukder
+07,7,Office Secretary,113,Zakir Hossain Patwary
+07,8,Publication Secretary,115,Shirin Akter
+07,9,Cultural Secretary,118,Ashraful Alam Sohel
+07,10,Drama Secretary,120,Rumana Afroz
+07,11,Sports Secretary,121,Kamrul Hasan Bepari
+07,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+07,13,Executive Member,127;129;130,Jesmin Ara Begum;Pranab Kumar Roy;Md. Shafiqul Alam Munshi
+08,1,President,-,(no vote)
+08,2,Vice President,-,(no vote)
+08,3,General Secretary,106,Sultana Razia
+08,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan
+08,5,Treasurer,110,Nasrin Sultana
+08,6,Organizing Secretary,112,Golam Mostafa Talukder
+08,7,Office Secretary,113,Zakir Hossain Patwary
+08,8,Publication Secretary,116,Anisur Rahman Mondal
+08,9,Cultural Secretary,117,Sanjida Parvin
+08,10,Drama Secretary,120,Rumana Afroz
+08,11,Sports Secretary,121,Kamrul Hasan Bepari
+08,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+08,13,Executive Member,-,(no vote)
+09,1,President,101,Md. Rafiqul Islam
+09,2,Vice President,103,Shamsul Haque Chowdhury
+09,3,General Secretary,106,Sultana Razia
+09,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan
+09,5,Treasurer,110,Nasrin Sultana
+09,6,Organizing Secretary,112,Golam Mostafa Talukder
+09,7,Office Secretary,-,(no vote)
+09,8,Publication Secretary,116,Anisur Rahman Mondal
+09,9,Cultural Secretary,117,Sanjida Parvin
+09,10,Drama Secretary,-,(no vote)
+09,11,Sports Secretary,122,Subrata Kumar Saha
+09,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+09,13,Executive Member,125;128;129,Habibur Rahman Sheikh;Iqbal Mahmud Chowdhury;Pranab Kumar Roy
+10,1,President,102,Kazi Nurul Amin
+10,2,Vice President,103,Shamsul Haque Chowdhury
+10,3,General Secretary,106,Sultana Razia
+10,4,Asst. General Secretary,108,Farhana Yasmin
+10,5,Treasurer,-,(no vote)
+10,6,Organizing Secretary,111,Shahidul Islam Mridha
+10,7,Office Secretary,114,Rezaul Karim Sikder
+10,8,Publication Secretary,115,Shirin Akter
+10,9,Cultural Secretary,118,Ashraful Alam Sohel
+10,10,Drama Secretary,119,Tapan Kumar Biswas
+10,11,Sports Secretary,122,Subrata Kumar Saha
+10,12,Hospitality Secretary,123,Dilruba Akhter
+10,13,Executive Member,125;126;130,Habibur Rahman Sheikh;Nazmul Huda Prodhan;Md. Shafiqul Alam Munshi
+11,1,President,102,Kazi Nurul Amin
+11,2,Vice President,-,(no vote)
+11,3,General Secretary,106,Sultana Razia
+11,4,Asst. General Secretary,108,Farhana Yasmin
+11,5,Treasurer,110,Nasrin Sultana
+11,6,Organizing Secretary,111,Shahidul Islam Mridha
+11,7,Office Secretary,113,Zakir Hossain Patwary
+11,8,Publication Secretary,116,Anisur Rahman Mondal
+11,9,Cultural Secretary,117,Sanjida Parvin
+11,10,Drama Secretary,119,Tapan Kumar Biswas
+11,11,Sports Secretary,122,Subrata Kumar Saha
+11,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+11,13,Executive Member,125;129;130,Habibur Rahman Sheikh;Pranab Kumar Roy;Md. Shafiqul Alam Munshi
+12,1,President,102,Kazi Nurul Amin
+12,2,Vice President,104,Mahbubur Rahman Khan
+12,3,General Secretary,-,(no vote)
+12,4,Asst. General Secretary,107,Tanvir Ahmed Bhuiyan
+12,5,Treasurer,109,Md. Jahangir Alam
+12,6,Organizing Secretary,111,Shahidul Islam Mridha
+12,7,Office Secretary,114,Rezaul Karim Sikder
+12,8,Publication Secretary,116,Anisur Rahman Mondal
+12,9,Cultural Secretary,117,Sanjida Parvin
+12,10,Drama Secretary,120,Rumana Afroz
+12,11,Sports Secretary,121,Kamrul Hasan Bepari
+12,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+12,13,Executive Member,127;128;129,Jesmin Ara Begum;Iqbal Mahmud Chowdhury;Pranab Kumar Roy
+13,1,President,101,Md. Rafiqul Islam
+13,2,Vice President,104,Mahbubur Rahman Khan
+13,3,General Secretary,105,Abdul Hannan Sarker
+13,4,Asst. General Secretary,-,(no vote)
+13,5,Treasurer,110,Nasrin Sultana
+13,6,Organizing Secretary,111,Shahidul Islam Mridha
+13,7,Office Secretary,113,Zakir Hossain Patwary
+13,8,Publication Secretary,116,Anisur Rahman Mondal
+13,9,Cultural Secretary,118,Ashraful Alam Sohel
+13,10,Drama Secretary,119,Tapan Kumar Biswas
+13,11,Sports Secretary,121,Kamrul Hasan Bepari
+13,12,Hospitality Secretary,-,(no vote)
+13,13,Executive Member,127;129;130,Jesmin Ara Begum;Pranab Kumar Roy;Md. Shafiqul Alam Munshi
+14,1,President,101,Md. Rafiqul Islam
+14,2,Vice President,104,Mahbubur Rahman Khan
+14,3,General Secretary,106,Sultana Razia
+14,4,Asst. General Secretary,108,Farhana Yasmin
+14,5,Treasurer,109,Md. Jahangir Alam
+14,6,Organizing Secretary,112,Golam Mostafa Talukder
+14,7,Office Secretary,114,Rezaul Karim Sikder
+14,8,Publication Secretary,115,Shirin Akter
+14,9,Cultural Secretary,117,Sanjida Parvin
+14,10,Drama Secretary,119,Tapan Kumar Biswas
+14,11,Sports Secretary,121,Kamrul Hasan Bepari
+14,12,Hospitality Secretary,123,Dilruba Akhter
+14,13,Executive Member,125;127;129,Habibur Rahman Sheikh;Jesmin Ara Begum;Pranab Kumar Roy
+15,1,President,101,Md. Rafiqul Islam
+15,2,Vice President,104,Mahbubur Rahman Khan
+15,3,General Secretary,105,Abdul Hannan Sarker
+15,4,Asst. General Secretary,108,Farhana Yasmin
+15,5,Treasurer,110,Nasrin Sultana
+15,6,Organizing Secretary,112,Golam Mostafa Talukder
+15,7,Office Secretary,113,Zakir Hossain Patwary
+15,8,Publication Secretary,116,Anisur Rahman Mondal
+15,9,Cultural Secretary,118,Ashraful Alam Sohel
+15,10,Drama Secretary,-,(no vote)
+15,11,Sports Secretary,121,Kamrul Hasan Bepari
+15,12,Hospitality Secretary,124,Mizanur Rahman Howlader
+15,13,Executive Member,126;129;130,Nazmul Huda Prodhan;Pranab Kumar Roy;Md. Shafiqul Alam Munshi

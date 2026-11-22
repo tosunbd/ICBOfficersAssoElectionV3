@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Build output
+.next/
+out/
+*.tsbuildinfo
+
+# Runtime data (database, scans, previews)
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Environment
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.log
+
+
+# Downloaded runtimes / installers (install.bat)
+tools/

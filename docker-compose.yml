@@ -1,0 +1,62 @@
+# ICB Officers' Association Election System
+#
+#   docker compose up --build -d      # build + start both services
+#   docker compose logs -f api        # watch ballot processing
+#   docker compose down               # stop (data/ on the host is kept)
+#
+# Values in ${...} come from the .env file next to this file (see .env.example).
+
+services:
+  api:
+    build:
+      context: ./icbOfficerAssoAPI
+    image: icb-election-api
+    container_name: icb-election-api
+    ports:
+      - "${API_PORT:-8000}:8000"
+    volumes:
+      # Scanned / Completed / Failed / Previews folders and the SQLite DB
+      - ./data:/app/data
+    environment:
+      DATABASE_URL: sqlite+aiosqlite:////app/data/icbOfficerAssoDB{Year}.db
+      SCANNED_FOLDER_PATH: /app/data/Scanned
+      COMPLETED_FOLDER_PATH: /app/data/Completed
+      FAILED_FOLDER_PATH: /app/data/Failed
+      PREVIEW_FOLDER_PATH: /app/data/Previews
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-change-me-in-production}
+      ADMIN_DEFAULT_USERNAME: ${ADMIN_DEFAULT_USERNAME:-admin}
+      ADMIN_DEFAULT_PASSWORD: ${ADMIN_DEFAULT_PASSWORD:-admin123}
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+      AUTO_PROCESS_ENABLED: ${AUTO_PROCESS_ENABLED:-true}
+      SCAN_POLL_INTERVAL: ${SCAN_POLL_INTERVAL:-5}
+      PROCESS_DELAY_SECONDS: ${PROCESS_DELAY_SECONDS:-0}
+      OCR_DPI: ${OCR_DPI:-200}
+      MARK_THRESHOLD: ${MARK_THRESHOLD:-0.06}
+      LOW_CONFIDENCE_THRESHOLD: ${LOW_CONFIDENCE_THRESHOLD:-0.65}
+      LIVE_BALLOT_DISPLAY_SECONDS: ${LIVE_BALLOT_DISPLAY_SECONDS:-2}
+      PUBLISH_REPLAY_ENABLED: ${PUBLISH_REPLAY_ENABLED:-true}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    restart: unless-stopped
+    networks:
+      - icb-network
+
+  ui:
+    build:
+      context: ./icbOfficerAssoUI
+      args:
+        # Leave empty (default) so the browser talks to http://<host>:8000
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-}
+    image: icb-election-ui
+    container_name: icb-election-ui
+    ports:
+      - "${UI_PORT:-3000}:3000"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - icb-network
+
+networks:
+  icb-network:
+    driver: bridge
