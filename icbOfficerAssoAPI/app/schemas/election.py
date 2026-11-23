@@ -42,7 +42,7 @@ class ElectionBase(BaseModel):
     title_bn: str | None = None
     year: int
     description: str | None = None
-    total_voters: int = Field(default=1000, ge=1)
+    total_voters: int = Field(default=455, ge=1)
     ballot_display_seconds: int = Field(default_factory=lambda: settings.LIVE_BALLOT_DISPLAY_SECONDS, **DISPLAY_SECONDS)
 
 

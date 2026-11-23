@@ -14,7 +14,7 @@ import { Icon } from "@/components/ui/Icon";
 import { DEFAULT_COUNCIL_NO, bengaliOrdinal, buildTitleBn, buildTitleEn, englishOrdinal, parseCouncilNo, toBengaliDigits } from "@/lib/electionTitle";
 
 const THIS_YEAR = new Date().getFullYear();
-const EMPTY_FORM = { council_no: DEFAULT_COUNCIL_NO, title: buildTitleEn(DEFAULT_COUNCIL_NO, THIS_YEAR), year: THIS_YEAR, description: "", total_voters: 1000, ballot_display_seconds: 2 };
+const EMPTY_FORM = { council_no: DEFAULT_COUNCIL_NO, title: buildTitleEn(DEFAULT_COUNCIL_NO, THIS_YEAR), year: THIS_YEAR, description: "", total_voters: 455, ballot_display_seconds: 2 };
 const MIN_SECONDS = 1;
 const MAX_SECONDS = 600;
 type ElectionFormValue = typeof EMPTY_FORM;

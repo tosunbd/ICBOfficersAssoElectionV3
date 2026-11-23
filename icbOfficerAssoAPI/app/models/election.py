@@ -29,7 +29,7 @@ class Election(Base):
     dashboard_paused: Mapped[bool] = mapped_column(Boolean, default=False)
     # PAUSE on the live screen: no ballot is read (files wait in Scanned) until START
     counting_paused: Mapped[bool] = mapped_column(Boolean, default=False)
-    total_voters: Mapped[int] = mapped_column(Integer, default=1000)
+    total_voters: Mapped[int] = mapped_column(Integer, default=455)
     # how long the public screen shows each ballot (live count and the replay after Publish)
     ballot_display_seconds: Mapped[int] = mapped_column(Integer, default=2)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
