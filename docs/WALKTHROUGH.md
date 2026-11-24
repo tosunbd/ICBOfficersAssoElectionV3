@@ -112,10 +112,23 @@ the whole paper; to void a paper, tick "Void this ballot" on the review page).
 ## Ballot paper numbers and file names
 
 Every counted ballot receives the next **ballot paper number** of the election
-(0001, 0002, …). The scanned file is moved to `data/Completed` renamed to
-`Ballot_0001.pdf` (a multi-page scan becomes `Ballot_0011-0020.pdf`). If the
+(6 digits: 000001, 000002, …). The scanned file is moved to `data/Completed` renamed to
+`Ballot_000001.pdf` (a multi-page scan becomes `Ballot_000011-000020.pdf`). If the
 committee changes the number on the review page, the file is renamed to match.
-The number is shown on the live screen ("Paper no. 0007") and in Admin → Ballots.
+The number is shown on the live screen ("Paper no. 000007") and in Admin → Ballots.
+
+The papers themselves are numbered ০০০০০১ … ০০০৪৫৫ (6 digits, one paper per voter):
+the form is printed without a number and the number is stamped into the box at the
+top right (38 × 14 mm) with the automatic numbering machine. Stamp it inside the box,
+clear of the border, in dark ink. The reader takes Bengali and English digits and
+shows the number as "Printed no 000001" on the ballot page. A ballot goes to
+**Needs review** when
+
+* the scan is named `img_<number>.jpg` and that number is not the stamped one
+  (leading zeros do not count: `img_0001` = `img_000001` = paper 000001), or the
+  stamped number cannot be read;
+* the stamped number is higher than **Total voters** of the election (Admin →
+  Elections; 455), i.e. a paper that was never issued or a misread stamp.
 
 ## What the automatic reader does (so you know what to look out for)
 

@@ -239,6 +239,7 @@ class BallotProcessor:
 
         ballot.printed_paper_no = await asyncio.to_thread(paper_number.read_paper_no, page.image)
         number_flag = self._check_file_number(ballot, warnings)
+        number_flag = await self._check_issued_number(db, ballot, warnings) or number_flag
         needs_review = (not page.layout_ok) or bool(over_voted) or low_confidence or void_marks > 0 or number_flag
         ballot.status = BallotStatus.NEEDS_REVIEW if needs_review else BallotStatus.PROCESSED
         ballot.total_votes_extracted = counted
@@ -269,6 +270,22 @@ class BallotProcessor:
             )
             return True
         return False
+
+    async def _check_issued_number(self, db: AsyncSession, ballot: Ballot, warnings: list[str]) -> bool:
+        """The papers of an election are numbered 000001 ... <total voters> (000455).  A number
+        read from the box that is not one of them is a misread stamp or a paper that was never
+        issued.  Returns True (needs review) in that case."""
+        if not ballot.printed_paper_no or not ballot.printed_paper_no.isdigit():
+            return False
+        election = await db.get(Election, ballot.election_id)
+        last = election.total_voters if election else 0
+        if not last or 1 <= int(ballot.printed_paper_no) <= last:
+            return False
+        warnings.append(
+            f"Paper number: {ballot.printed_paper_no} is not one of the papers issued "
+            f"({self.format_paper_no(1)} - {self.format_paper_no(last)})"
+        )
+        return True
 
     # ---------------------------------------------------------- reprocess
     async def reprocess_ballot(self, db: AsyncSession, ballot: Ballot) -> Ballot:
@@ -513,7 +530,7 @@ class BallotProcessor:
 
     @staticmethod
     def completed_file_name(ballots: list[Ballot], suffix: str) -> str:
-        """Ballot_0001.pdf for one page, Ballot_0011-0020.pdf for a batch."""
+        """Ballot_000001.pdf for one page, Ballot_000011-000020.pdf for a batch."""
         numbers = [b.ballot_paper_no for b in ballots if b.ballot_paper_no]
         if not numbers:
             return ""

@@ -3,17 +3,18 @@ r"""Print-ready ballot papers from the approved Word form (needs Microsoft Word)
 Run from the icbOfficerAssoAPI folder:
 
     .venv\Scripts\python scripts\make_ballot_papers.py                 the empty form only
-    .venv\Scripts\python scripts\make_ballot_papers.py 1 460           and numbered papers
+    .venv\Scripts\python scripts\make_ballot_papers.py 1 455           and numbered papers
 
-The form is <project>/Sample Ballots/21-11-2026/Blank ballot/Blank_ballot_form.docx
+The form is <project>/Sample Ballots/24-11-2026/Blank ballot/Blank_ballot_form.docx
 (QR code, bar code and the large number box: scripts/make_ballot_form.py; read
 only here).  Written next to it:
 
-    Blank_ballot_form.pdf / .png          the empty form (no ballot number): print this
-                                          one and stamp the numbers with the numbering machine
-    Ballot_papers_0001_to_0460.pdf        only when first / last are given: one ballot per
-                                          page with the number printed (০০০১ ... ০৪৬০), for an
-                                          election without a numbering machine
+    Blank_ballot_form.pdf / .png          the empty form (no ballot number): print this one
+                                          (455 copies) and stamp the numbers ০০০০০১ ... ০০০৪৫৫
+                                          with the numbering machine
+    Ballot_papers_000001_to_000455.pdf    only when first / last are given: one ballot per
+                                          page with the 6 digit number printed (০০০০০১ ...
+                                          ০০০৪৫৫), for an election without a numbering machine
 """
 
 from __future__ import annotations
@@ -30,9 +31,10 @@ import pypdfium2 as pdfium
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
-FOLDER = ROOT / "Sample Ballots" / "21-11-2026"
+FOLDER = ROOT / "Sample Ballots" / "24-11-2026"
 TEMPLATE = FOLDER / "Blank ballot" / "Blank_ballot_form.docx"
 DPI = 200
+NUMBER_DIGITS = 6      # ballot paper numbers: 000001 ... 000455
 
 BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
 EN_DIGITS = str.maketrans("০১২৩৪৫৬৭৮৯", "0123456789")
@@ -155,8 +157,8 @@ def main() -> None:
     if len(sys.argv) < 3:
         return
     first, last = int(sys.argv[1]), int(sys.argv[2])
-    out = folder / f"Ballot_papers_{first:04d}_to_{last:04d}.pdf"
-    ballot_pdf([f"{n:04d}" for n in range(first, last + 1)], out)
+    out = folder / f"Ballot_papers_{first:0{NUMBER_DIGITS}d}_to_{last:0{NUMBER_DIGITS}d}.pdf"
+    ballot_pdf([f"{n:0{NUMBER_DIGITS}d}" for n in range(first, last + 1)], out)
     print(f"Wrote {out} ({last - first + 1} pages)")
 
 

@@ -146,7 +146,7 @@ def find_number_box(gray: np.ndarray) -> tuple[int, int, int, int] | None:
     best = None
     for contour in contours:
         x, y, w, h = cv2.boundingRect(contour)
-        # 15 mm (form of 17-11-2026) to 32 mm wide (form of 19-11-2026, for the numbering machine)
+        # 15 mm (form of 17-11-2026) to 38 mm wide (form of 24-11-2026, for the 6 digit numbering machine)
         if not (0.05 * page_w <= w <= 0.22 * page_w) or not (1.3 <= w / max(h, 1) <= 3.6):
             continue
         if x + w / 2 < page_w * 0.55:

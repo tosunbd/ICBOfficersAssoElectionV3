@@ -1,11 +1,11 @@
-r"""Create the Bengali test ballots from the Word form of 21-11-2026 (QR code, bar code
-at the bottom centre, large number box for the numbering machine).
+r"""Create the Bengali test ballots from the Word form of 24-11-2026 (QR code, bar code
+at the bottom centre, 38 x 14 mm number box for the 6 digit numbering machine).
 
 Run from the icbOfficerAssoAPI folder (needs Microsoft Word):
 
     .venv\Scripts\python scripts\make_bn_ballots.py [output folder]
 
-Default output: <project>/Sample Ballots/21-11-2026
+Default output: <project>/Sample Ballots/24-11-2026
 Form:       <that folder>/Blank ballot/Blank_ballot_form.docx   (read only)
 Candidates: <that folder>/candidates.csv   (same names and left/right order as the form, read only)
     img_0001.jpg ... IMG_0025.JPEG        25 scanned ballots, every common voter mistake
@@ -17,8 +17,8 @@ Candidates: <that folder>/candidates.csv   (same names and left/right order as t
 
 The printed form is the Word document itself, exported by Word with an empty
 number box (scripts/make_ballot_papers.py).  The ballot paper number is then
-stamped into the box the way a numbering machine does it (6 English digits,
-never quite straight or centred), the voter's pen marks are drawn on the page
+stamped into the box the way a hand-held numbering machine does it (6 Bengali
+digits, ০০০০০১ ..., never quite straight or centred), the voter's pen marks are drawn on the page
 with Pillow, and the page is "scanned" (DPI, skew, rotation, noise).  Fixed
 seed: running the script again gives the same files.
 """
@@ -47,7 +47,7 @@ from make_ballot_form import BALLOT_CODE  # noqa: E402
 from make_ballot_papers import TEMPLATE, ballot_pdf, render_pages, template_candidates, write_blank  # noqa: E402
 
 ROOT = API_DIR.parent
-OUT = ROOT / "Sample Ballots" / "21-11-2026"
+OUT = ROOT / "Sample Ballots" / "24-11-2026"
 # the candidate list of the final ballot: read only, never written by this script
 CANDIDATES_CSV = OUT / "candidates.csv"
 SEED = 20261103
@@ -116,14 +116,22 @@ def layout(positions: list[dict], form: Image.Image) -> tuple[dict[str, tuple[in
 
 
 # ------------------------------------------------------- numbering machine
-STAMP_DIGITS = 6               # wheels of the numbering machine: paper 1 is stamped 000001
-STAMP_FONTS = ("bahnschrift.ttf", "arialbd.ttf")   # close to the gothic wheels of a numbering machine
+STAMP_DIGITS = 6               # wheels of the numbering machine: paper 1 is stamped ০০০০০১
+LAST_PAPER = 455               # papers ০০০০০১ ... ০০০৪৫৫ are issued
+STAMP_FONTS = ("kalpurush.ttf", "Siyamrupali.ttf", "Nirmala.ttc")   # Bengali digit wheels
+BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
 STAMP_INK = (28, 28, 34)
 FONTS_DIR = Path("C:/Windows/Fonts")
 
 
 def stamped(paper: str) -> str:
+    """The number as the system reads and stores it: 6 digits (000001)."""
     return f"{int(paper):0{STAMP_DIGITS}d}"
+
+
+def stamped_bn(paper: str) -> str:
+    """The number as the machine stamps it on the paper: ০০০০০১."""
+    return stamped(paper).translate(BN_DIGITS)
 
 
 def stamp_number(page: Image.Image, paper: str, rng: random.Random) -> None:
@@ -137,16 +145,16 @@ def stamp_number(page: Image.Image, paper: str, rng: random.Random) -> None:
     if font_file is None:
         raise SystemExit(f"None of the fonts {STAMP_FONTS} is installed")
     font = ImageFont.truetype(str(font_file), 54)
-    text = stamped(paper)
+    text = stamped_bn(paper)
     layer = Image.new("L", (w, h), 0)
     draw = ImageDraw.Draw(layer)
-    advance = max(draw.textlength(d, font=font) for d in "0123456789") + 5
+    advance = max(draw.textlength(d, font=font) for d in "০১২৩৪৫৬৭৮৯") + 6
     left = (w - advance * len(text)) / 2
     for i, digit in enumerate(text):
         draw.text((left + i * advance + advance / 2, h / 2), digit, fill=255, font=font, anchor="mm")
     ink = np.asarray(layer, dtype=np.float32) * np.random.default_rng(int(paper)).uniform(0.72, 1.0, (h, w))
     layer = Image.fromarray(ink.astype(np.uint8)).rotate(rng.uniform(-1.2, 1.2), resample=Image.BICUBIC)
-    page.paste(Image.new("RGB", (w, h), STAMP_INK), (x + rng.randint(-10, 10), y + rng.randint(-4, 4)), layer)
+    page.paste(Image.new("RGB", (w, h), STAMP_INK), (x + rng.randint(-30, 30), y + rng.randint(-12, 12)), layer)
 
 
 # ---------------------------------------------------------------- pen marks
@@ -509,7 +517,7 @@ def readme(all_plans: list[dict], total: int, folder: str) -> str:
         "=" * 84,
         "",
         "25 scanned ballot images (JPG), A4, made from the Word form itself (exported by Word):",
-        "QR code and Bengali title, ballot paper number box (32 x 12 mm), then one row",
+        "QR code and Bengali title, ballot paper number box (38 x 14 mm), then one row",
         "per post with the post name in the middle column and its two candidates on either side:",
         "  voter no + candidate name | box | post name | voter no + candidate name | box",
         "Executive Member (6 candidates, up to 3 votes) takes 3 rows with one merged post-name cell.",
@@ -518,8 +526,9 @@ def readme(all_plans: list[dict], total: int, folder: str) -> str:
         f"  - QR code (top left) and bar code (bottom centre, under the candidate table; it was at the",
         f"    bottom left on the form of 19-11-2026), both reading {BALLOT_CODE} on every paper;",
         "    the counting system does not need them, they mark the paper as a ballot of this election.",
-        "  - a larger number box: the form is printed WITHOUT a number and the ballot paper number is",
-        f"    stamped into the box with the automatic numbering machine ({STAMP_DIGITS} digits here: 000001 ...).",
+        "  - a larger number box (38 x 14 mm; it was 32 x 12 mm on the form of 21-11-2026): the form is",
+        f"    printed WITHOUT a number and the {STAMP_DIGITS} digit ballot paper number ({stamped_bn('1')} ... {stamped_bn(str(LAST_PAPER))})",
+        "    is stamped into the box by hand with the automatic numbering machine.",
         "Both halves are the same: equal candidate columns, equal boxes, one font size.",
         "Candidates: candidates.csv of this folder = the names and the left / right places of the",
         "Word form (first candidate of a row = left side). Voter number on the first line, name below.",
@@ -530,6 +539,8 @@ def readme(all_plans: list[dict], total: int, folder: str) -> str:
         "  extension may be any upper/lower case (IMG_0001.JPG, iMg_0001.Jpeg); jpg and jpeg are both",
         "  accepted. Leading zeros do not count: img_0001 = paper 000001 = paper 1.",
         "  A mismatch, or a paper whose number cannot be read, goes to 'Needs review'.",
+        f"  So does a number that was never issued (above {stamped(str(LAST_PAPER))} = Total voters of the election).",
+        "  Bengali (০-৯) and English (0-9) digits are both read; the system shows them as 000001.",
         "  Stamp the number INSIDE the box, clear of its border, in dark ink (black or blue).",
         "  Here: 0019 is saved as ..._0091 (typing error), 0021 is a photocopy of paper 0002, 0022 is",
         "  paper 0026, and 0023 has an empty number box.",
@@ -542,7 +553,7 @@ def readme(all_plans: list[dict], total: int, folder: str) -> str:
         f"  Total valid votes: {total}.",
         "  Blank ballot\\Blank_ballot_form.docx          the form (Word) - the source of everything here",
         "  Blank ballot\\Blank_ballot_form.png / .pdf   the unmarked form (no X, no number) - PRINT THIS",
-        "                      (460 copies), then stamp the numbers. Do NOT copy it into the Scanned folder.",
+        f"                      ({LAST_PAPER} copies), then stamp the numbers. Do NOT copy it into the Scanned folder.",
         "",
         "WHAT EACH BALLOT TESTS                                                         expected status",
         "-" * 110,

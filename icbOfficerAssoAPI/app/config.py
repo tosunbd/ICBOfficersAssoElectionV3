@@ -76,7 +76,9 @@ class Settings(BaseSettings):
     #  (ga)  a rubbed / scribbled mark is void -> a box that is mostly ink is void
     OUTSIDE_INK_THRESHOLD: float = 0.04  # ink ratio in the ring around a box that counts as 'outside'
     SMUDGE_THRESHOLD: float = 0.55       # ink ratio inside a box that counts as smudged / blacked out
-    BALLOT_NUMBER_DIGITS: int = 4        # ballot paper numbers are zero-padded to this width
+    # Ballot paper numbers have 6 digits (000001 ... 000455, the wheels of the numbering
+    # machine that stamps them on the papers); numbers are zero-padded to this width
+    BALLOT_NUMBER_DIGITS: int = 6
 
     # --- Auth -------------------------------------------------------------
     JWT_SECRET_KEY: str = "icb-election-super-secret-key-change-in-production"

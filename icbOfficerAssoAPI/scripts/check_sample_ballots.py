@@ -1,6 +1,6 @@
 r"""Read a sample-ballot folder with the counting engine and compare with its answer_key.csv.
 
-    .venv\Scripts\python scripts\check_sample_ballots.py ["..\Sample Ballots\21-11-2026"]
+    .venv\Scripts\python scripts\check_sample_ballots.py ["..\Sample Ballots\24-11-2026"]
 
 No database is used: the candidate layout comes from the folder's
 candidates.csv, and the ballot rules (ka/kha/ga) are applied exactly like
@@ -22,7 +22,7 @@ from app.routers.elections import DEFAULT_POSITIONS  # noqa: E402
 from app.services.ocr_service import ocr_service  # noqa: E402
 from app.utils.paper_number import file_paper_no, read_paper_no, same_paper  # noqa: E402
 
-DEFAULT_DIR = API_DIR.parent / "Sample Ballots" / "21-11-2026"
+DEFAULT_DIR = API_DIR.parent / "Sample Ballots" / "24-11-2026"
 
 
 def build_layout(folder: Path) -> tuple[list[dict], dict[int, int]]:

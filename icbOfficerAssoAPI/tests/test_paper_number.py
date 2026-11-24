@@ -42,6 +42,19 @@ def test_reads_bengali_digits_in_the_box(number):
     assert read_paper_no(_gray(image)) == number
 
 
+@pytest.mark.skipif(not NIRMALA.exists(), reason="needs a Bengali font")
+@pytest.mark.parametrize("number", ["000001", "000455", "000237", "000189", "000306"])
+def test_reads_six_bengali_digits_of_the_numbering_machine(number):
+    image = draw_ballot(template_positions(), set(), seed=4)
+    draw = ImageDraw.Draw(image)
+    draw.rectangle([1150, 100, 1480, 180], fill="white")          # the form of 24-11-2026: a 38 x 14 mm box
+    draw.rectangle([1178, 68, 1478, 178], outline="black", width=3)
+    font = ImageFont.truetype(str(NIRMALA), 46, index=1)
+    for i, digit in enumerate(number.translate(str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯"))):
+        draw.text((1232 + i * 38, 123), digit, fill="black", font=font, anchor="mm")
+    assert read_paper_no(_gray(image)) == number
+
+
 def test_empty_box_or_page_reads_nothing():
     assert read_paper_no(_gray(draw_ballot(template_positions(), set(), seed=3))) is None
     assert read_paper_no(None) is None
@@ -75,3 +88,19 @@ async def test_file_number_must_be_the_ballot_number(client, auth, election):
 
     plain = (await upload(client, auth, election["id"], _image("scan_0009.jpg", None, 25)))[0]
     assert plain["status"] == "processed"  # other file names are not checked
+
+
+async def test_system_numbers_have_six_digits_and_the_paper_must_be_an_issued_one(client, auth, election):
+    # the election fixture has 100 voters: papers 000001 ... 000100 were issued
+    last = (await upload(client, auth, election["id"], _image("img_000100.jpg", "0100", 31)))[0]
+    assert last["status"] == "processed", last["ocr_warnings"]
+    assert len(last["ballot_paper_no"]) == 6 and last["ballot_paper_no"].isdigit()
+    # (the Completed folder is shared by the tests: a taken name gets _1, _2 ...)
+    assert last["pdf_filename"].startswith(f"Ballot_{last['ballot_paper_no']}")
+
+    never = (await upload(client, auth, election["id"], _image("img_0101.jpg", "0101", 32)))[0]
+    assert never["status"] == "needs_review"
+    assert any("not one of the papers issued (000001 - 000100)" in w for w in never["ocr_warnings"])
+
+    other_name = (await upload(client, auth, election["id"], _image("scan_0300.jpg", "0300", 33)))[0]
+    assert other_name["status"] == "needs_review"  # checked whatever the file is called

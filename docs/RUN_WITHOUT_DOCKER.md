@@ -152,7 +152,7 @@ cd icbOfficerAssoAPI
 ```
 
 Counted files are renamed with their ballot paper number, e.g.
-`data/Completed/Ballot_0001.pdf`.
+`data/Completed/Ballot_000001.pdf`.
 
 Then:
 1. Start the system (Step 4) and open **http://localhost:3000/dashboard** on the

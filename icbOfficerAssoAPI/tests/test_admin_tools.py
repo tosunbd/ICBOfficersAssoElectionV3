@@ -9,7 +9,7 @@ from tests.test_api import candidates_by_voter_no, upload
 
 def forget_files(ballots: list[dict]) -> None:
     """Deleting a ballot keeps its scan in Completed; remove it so later tests
-    that expect Ballot_0001.pdf to be free are not affected."""
+    that expect Ballot_000001.pdf to be free are not affected."""
     for ballot in ballots:
         (settings.completed_path / ballot["pdf_filename"]).unlink(missing_ok=True)
 

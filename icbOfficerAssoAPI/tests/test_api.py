@@ -86,9 +86,9 @@ async def test_upload_ballot_counts_votes(client, auth, election):
 
     # File moved from Scanned to Completed and renamed with the ballot paper number
     assert not (settings.scanned_path / "clean.pdf").exists()
-    assert ballot["ballot_paper_no"] == "0001"
-    assert ballot["pdf_filename"] == "Ballot_0001.pdf"
-    assert (settings.completed_path / "Ballot_0001.pdf").exists()
+    assert ballot["ballot_paper_no"] == "000001"
+    assert ballot["pdf_filename"] == "Ballot_000001.pdf"
+    assert (settings.completed_path / "Ballot_000001.pdf").exists()
 
     candidates = await candidates_by_voter_no(client, election["id"])
     for voter_no, cand in candidates.items():
@@ -133,8 +133,8 @@ async def test_multi_page_pdf_creates_one_ballot_per_page(client, auth, election
 
     ballots = await upload(client, auth, election["id"], pdf)
     assert [b["page_number"] for b in ballots] == [1, 2]
-    assert [b["ballot_paper_no"] for b in ballots] == ["0001", "0002"]
-    assert ballots[0]["pdf_filename"] == "Ballot_0001-0002.pdf"
+    assert [b["ballot_paper_no"] for b in ballots] == ["000001", "000002"]
+    assert ballots[0]["pdf_filename"] == "Ballot_000001-000002.pdf"
     candidates = await candidates_by_voter_no(client, election["id"])
     assert {candidates[v]["vote_count"] for v in ("101", "102", "103", "104")} == {1}
 

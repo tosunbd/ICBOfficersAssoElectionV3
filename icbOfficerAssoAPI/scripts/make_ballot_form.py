@@ -1,17 +1,20 @@
-r"""Build the ballot form of 21-11-2026 from the form approved on 17-11-2026.
+r"""Build the ballot form of 24-11-2026 from the form approved on 17-11-2026.
 
     .venv\Scripts\python scripts\make_ballot_form.py [--force]
 
 Source (read only):  <project>/Sample Ballots/17-11-2026/Blank ballot/Blank_ballot_form.docx
-Written:             <project>/Sample Ballots/21-11-2026/Blank ballot/Blank_ballot_form.docx
+Written:             <project>/Sample Ballots/24-11-2026/Blank ballot/Blank_ballot_form.docx
 
 Three changes, nothing else on the form is touched:
 
 1. QR code at the top left, beside the title            (floating picture)
 2. bar code (Code 128) at the bottom, below the instructions, centred under the
    candidate table (floating picture; it was at the bottom left on the form of 19-11-2026)
-3. a larger ballot paper number box (32 x 12 mm instead of 15 x 10 mm): the number
-   is stamped with an automatic numbering machine and must fit inside the box.
+3. a larger ballot paper number box (38 x 14 mm; 15 x 10 mm on the form of 17-11-2026,
+   32 x 12 mm on the forms of 19-11 and 21-11-2026): the 6 digit number (০০০০০১ ... ০০০৪৫৫)
+   is stamped by hand with an automatic numbering machine and must land inside the box,
+   clear of its border.  The width comes out of the empty part of the "ballot paper no"
+   label cell and the spacer on the right, the height out of the top margin.
 
 The pictures float over the page, so the candidate table does not move: the taller
 title row is taken out of the top margin.  Both codes hold BALLOT_CODE, the same
@@ -35,7 +38,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "Sample Ballots" / "17-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
-DEST = ROOT / "Sample Ballots" / "21-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
+DEST = ROOT / "Sample Ballots" / "24-11-2026" / "Blank ballot" / "Blank_ballot_form.docx"
 
 BALLOT_CODE = "ICBOA-20-2026"   # ICB Officers' Association, 20th council, election 2026
 
@@ -46,9 +49,10 @@ BARCODE_MM = (276.0, 9.0)        # top, height; left/right: centred under the ca
 BARCODE_MODULE_MM = 0.33         # width of the narrowest bar
 
 # title table: title | "ballot paper no" | gap | number box | spacer   (twips, 1 mm = 56.7)
-OLD_COLS = {"title": 7063, "box": 867, "spacer": 576}
-NEW_COLS = {"title": 6572, "box": 1814, "spacer": 120}
-OLD_ROW_H, NEW_ROW_H = 547, 680
+OLD_COLS = {"title": 7063, "label": 1876, "box": 867, "spacer": 576}
+NEW_COLS = {"title": 6572, "label": 1535, "box": 2155, "spacer": 120}    # box: 38 mm wide
+assert sum(OLD_COLS.values()) == sum(NEW_COLS.values())                  # the table keeps its width
+OLD_ROW_H, NEW_ROW_H = 547, 794                                          # box: 14 mm high
 OLD_TOP_MARGIN = 781
 
 
@@ -144,7 +148,7 @@ def build_document(xml: str, barcode_w_mm: float) -> str:
         table = _swap(table, f'w:w="{OLD_COLS[key]}"', f'w:w="{NEW_COLS[key]}"', 2)   # grid column + cell
     table = _swap(table, f'<w:trHeight w:hRule="exact" w:val="{OLD_ROW_H}"/>', f'<w:trHeight w:hRule="exact" w:val="{NEW_ROW_H}"/>', 1)
     # title and label stay level with the middle of the taller row
-    for width in (NEW_COLS["title"], 1876):
+    for width in (NEW_COLS["title"], NEW_COLS["label"]):
         table = _swap(table, f'<w:tcW w:w="{width}" w:type="dxa"/></w:tcPr>',
                       f'<w:tcW w:w="{width}" w:type="dxa"/><w:vAlign w:val="center"/></w:tcPr>', 1)
     table = _swap(table, '</w:tcBorders></w:tcPr>', '</w:tcBorders><w:vAlign w:val="center"/></w:tcPr>', 1)
